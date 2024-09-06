@@ -16,6 +16,6 @@ git clone https://github.com/chebichebkheireddine/Js-stopwatch-Timer-App.git
 
 To use the stopwatch timer app, simply open the `index.html` file in your web browser. The app will be displayed on the screen with buttons to start, stop, and reset the timer. The laps time will be shown in minutes, seconds, and milliseconds. Enjoy using the stopwatch timer app for your timing needs!
 
-![Stopwatch Timer 1](image.png)
-![Stopwatch Timer 2](image-1.png)
-![Stopwatch Timer 3](image-2.png)
+![Stopwatch Timer 1](/Images/image.png)
+![Stopwatch Timer 2](Images/image-1.png)
+![Stopwatch Timer 3](Images/image-2.png)

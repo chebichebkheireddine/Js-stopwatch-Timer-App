@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(131, 131, 254, 1) 0%, rgba(0, 212, 255, 1) 61%);
+    background: linear-gradient(40deg, rgba(2, 0, 36, 1) 0%, rgba(131, 131, 254, 1) 0%, rgba(0, 212, 255, 1) 61%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,9 +22,10 @@ body {
     margin-bottom: 1.5erm;
 
 }
+
 .stopwatch {
- display: flex;
- flex-direction: column;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     align-items: center;
 
@@ -36,7 +37,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 12px rgb(0, 0, 0, 0.2);
-    animation: pulse 1.5s  infinite alternate;
+    animation: pulse 1.5s infinite alternate;
 }
 
 /* pulse */
@@ -49,18 +50,21 @@ body {
         transform: scale(1.05);
     }
 }
+
 /* Timer span */
-.timer span{
-    width: 110px;
+.timer span {
+    width: 100px;
     display: inline-block;
     text-align: center;
 }
+
 /* controles */
 .controls {
     display: flex;
     gap: 1rem;
 }
-button{
+
+button {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     border: none;
@@ -68,19 +72,23 @@ button{
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
-    transition:  background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
-button:hover{
+
+button:hover {
     background-color: #31b5ff;
 }
-.laps{
+
+.laps {
     width: 100%;
-    
+
 }
-.lap-title{
-    font-size: 1.5erm ;
+
+.lap-title {
+    font-size: 1.5erm;
 }
-ul{
+
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -90,15 +98,19 @@ ul{
     border-radius: 10px;
     box-shadow: 0 0 12px rgb(0, 0, 0, 0.1);
 }
+
 /* li  is for javascript */
-li{
-    padding: 1erm ;
+li {
+    padding: 10px;
+    /* border-radius: 12; */
     border-bottom: 1px solid #ddd;
 
 }
-li:last-child{
+
+li:last-child {
     border-bottom: none;
 }
-li span{
+
+li span {
     font-weight: 700;
 }

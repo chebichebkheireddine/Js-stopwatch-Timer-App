@@ -1,0 +1,104 @@
+body {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(131, 131, 254, 1) 0%, rgba(0, 212, 255, 1) 61%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: #eeeeee;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 12px rgb(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 30px;
+    margin-bottom: 1.5erm;
+
+}
+.stopwatch {
+ display: flex;
+ flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.timer {
+    font-size: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgb(0, 0, 0, 0.2);
+    animation: pulse 1.5s  infinite alternate;
+}
+
+/* pulse */
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+/* Timer span */
+.timer span{
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+}
+/* controles */
+.controls {
+    display: flex;
+    gap: 1rem;
+}
+button{
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #00d4ff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  background-color 0.3s ease-in-out;
+}
+button:hover{
+    background-color: #31b5ff;
+}
+.laps{
+    width: 100%;
+    
+}
+.lap-title{
+    font-size: 1.5erm ;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    max-height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgb(0, 0, 0, 0.1);
+}
+/* li  is for javascript */
+li{
+    padding: 1erm ;
+    border-bottom: 1px solid #ddd;
+
+}
+li:last-child{
+    border-bottom: none;
+}
+li span{
+    font-weight: 700;
+}
